@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://w3.org">
+<html xmlns="http://w3.org" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,interactive-widget=resizes-visual" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." />
+    <link rel="icon" type="image/x-icon" href="./tab-icons/google.ico" />
+    <link rel="stylesheet" href="./boot.css" />
+    <script type="text/javascript" src="./static-paths.js"></script>
+    <script type="text/javascript" src="./theme.js"></script>
+    <title>Google</title>
+    <script type="text/javascript" src="./assets/index-B2X2y5C-.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/index-Z_e_xL-Q.css" />
+  </head>
+  <body>
+    <div id="boot" class="ivy-loading" role="status">
+      <span class="ivy-loading-label">loading<span class="ivy-loading-dots">...</span></span>
+      <div class="ivy-loading-track"><span></span></div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
