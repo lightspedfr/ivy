@@ -1,0 +1,22 @@
+{
+  "centralFeatures": {
+    "account": "https://ivy.rest/l",
+    "communityChat": "https://ivy.rest/c",
+    "billing": "https://ivy.rest/bi",
+    "links": "https://ivy.rest/lk"
+  },
+  "navigation": "internal proxy tabs; direct Ivy links and local central-feature links are intercepted; no external browser-tab navigation",
+  "checks": [
+    "navigation state and tab reuse",
+    "deep links and nested base path",
+    "secure destination validation",
+    "both engine initializations and scope",
+    "central sign-in response policies",
+    "API cancellation and retries",
+    "four central pages fetched through bundled transport",
+    "generated-module linking and runtime identifier audit"
+  ],
+  "authentication": "normal server authentication and origin protections remain; signed-in browser flows are not interactively verified",
+  "games": "hosted iframe on games.ivy.rest",
+  "payload": "compiled frontend assets and license metadata only; no keys, server source, account data or deployment configuration"
+}

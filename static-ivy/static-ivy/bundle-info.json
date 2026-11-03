@@ -3,5 +3,6 @@
   "gamesIframe": "https://games.ivy.rest/static/games/index.html",
   "games": "hosted on ivy; no local game catalogue, thumbnails or HTML payloads",
   "proxyEngines": "bundled locally",
-  "hosting": "static HTTPS, automatic base paths, hash navigation"
+  "hosting": "static HTTPS, automatic base paths, hash navigation",
+  "centralFeatures": "account, community chat, billing and links use internal proxy tabs"
 }

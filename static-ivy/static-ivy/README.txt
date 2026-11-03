@@ -13,7 +13,10 @@ expected iframe source and exact game origin; saves stay on your static host.
 
 tejmarcs/teiloivartlu, their WASM and transports remain bundled locally.
 Edit wisp.json to change the ordered WebSocket Wisp server list. API base is
-https://ivy.rest. Secure account/chat/billing features open on central Ivy.
+https://ivy.rest. Account, community chat, billing and links open through the local proxy in
+internal Ivy tabs. They require their normal Ivy sign-in. Proxy sessions are
+separate from direct ivy.rest sessions; sign-in and payment providers may
+restrict proxied browsers. No authentication checks are disabled.
 
 Serve .mjs/.js as JavaScript and .wasm as application/wasm. Service worker
 scope is this folder. Avoid blanket COEP=require-corp headers because they can
@@ -22,3 +25,7 @@ block externally hosted games. HTTPS or localhost is required for the proxy.
 Keep this folder structure intact. No Node process, npm install, private key,
 server source, account database or runtime secret is part of this deployment.
 Original dependency license notices are retained in licenses/.
+
+The outer static dashboard does not inherit a proxied account session. Account
+tools and community chat run inside their proxy tabs. Browser sign-in and
+OAuth/payment flows have not been interactively verified.
