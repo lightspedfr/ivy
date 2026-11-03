@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="fb-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#7dd3fc"/><stop offset="1" stop-color="#e0f2fe"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="9s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="fb-s" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".6" stop-color="#bae6fd"/><stop offset="1" stop-color="#38bdf8" stop-opacity=".5"/></linearGradient>
+<filter id="fb-glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<circle cx="80" cy="80" r="55.5" fill="none" stroke="url(#fb-g)" stroke-width="5" filter="url(#fb-glow)"/>
+<g filter="url(#fb-glow)">
+<path d="M80 2 L86 26 L80 22 L74 26 Z" fill="url(#fb-s)"/>
+<path d="M45 12 L58 32 L52 31 L48 36 Z" fill="url(#fb-s)"/>
+<path d="M115 12 L102 32 L108 31 L112 36 Z" fill="url(#fb-s)"/>
+<path d="M22 40 L40 50 L35 53 L35 58 Z" fill="url(#fb-s)"/>
+<path d="M138 40 L120 50 L125 53 L125 58 Z" fill="url(#fb-s)"/>
+<path d="M80 2 L86 26 L80 22 L74 26 Z" fill="#ffffff" opacity="0"><animate attributeName="opacity" values="0;.95;0" dur="3s" repeatCount="indefinite"/></path>
+<path d="M45 12 L58 32 L52 31 L48 36 Z" fill="#ffffff" opacity="0"><animate attributeName="opacity" values="0;.9;0" dur="3s" begin="-2.4s" repeatCount="indefinite"/></path>
+<path d="M115 12 L102 32 L108 31 L112 36 Z" fill="#ffffff" opacity="0"><animate attributeName="opacity" values="0;.9;0" dur="3s" begin="-1.8s" repeatCount="indefinite"/></path>
+<path d="M22 40 L40 50 L35 53 L35 58 Z" fill="#ffffff" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="3s" begin="-1.2s" repeatCount="indefinite"/></path>
+<path d="M138 40 L120 50 L125 53 L125 58 Z" fill="#ffffff" opacity="0"><animate attributeName="opacity" values="0;.85;0" dur="3s" begin="-.6s" repeatCount="indefinite"/></path>
+</g>
+<circle r="1.6" fill="#ffffff"><animateMotion dur="4s" repeatCount="indefinite" path="M30 30 C 36 60, 22 90, 32 140"/><animate attributeName="opacity" values="0;1;0" dur="4s" repeatCount="indefinite"/></circle>
+<circle r="1.2" fill="#ffffff"><animateMotion dur="5s" begin="-2s" repeatCount="indefinite" path="M132 34 C 126 70, 140 100, 128 146"/><animate attributeName="opacity" values="0;1;0" dur="5s" begin="-2s" repeatCount="indefinite"/></circle>
+<circle r="1.4" fill="#e0f2fe"><animateMotion dur="4.6s" begin="-3.1s" repeatCount="indefinite" path="M146 70 C 140 96, 150 116, 140 150"/><animate attributeName="opacity" values="0;1;0" dur="4.6s" begin="-3.1s" repeatCount="indefinite"/></circle>
+</svg>

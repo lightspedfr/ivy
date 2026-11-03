@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 320" width="240" height="320" preserveAspectRatio="xMidYMid slice">
+<defs>
+<radialGradient id="sp-core" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#fff3c4"/><stop offset="1" stop-color="#fde68a" stop-opacity="0"/></radialGradient>
+<linearGradient id="sp-sheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".16"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+<filter id="sp-glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="1.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<g id="sp-star"><circle r="7" fill="url(#sp-core)"/><path d="M0 -10 C 1 -2, 2 -1, 10 0 C 2 1, 1 2, 0 10 C -1 2, -2 1, -10 0 C -2 -1, -1 -2, 0 -10 Z" fill="#ffffff"/></g>
+</defs>
+<rect x="-240" y="-40" width="160" height="400" fill="url(#sp-sheen)" transform="rotate(20 120 160)"><animate attributeName="x" values="-240;-240;360" keyTimes="0;.6;1" dur="6s" repeatCount="indefinite"/></rect>
+<g filter="url(#sp-glow)">
+<g transform="translate(40 60)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;1.1;0;0" keyTimes="0;.25;.5;1" dur="2.4s" repeatCount="indefinite"/></use></g>
+<g transform="translate(196 40)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;0;.8;0" keyTimes="0;.3;.55;.8" dur="2.8s" repeatCount="indefinite"/></use></g>
+<g transform="translate(150 132)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;.7;0;0" keyTimes="0;.2;.45;1" dur="3.2s" begin="-1s" repeatCount="indefinite"/></use></g>
+<g transform="translate(206 230)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;1;0;0" keyTimes="0;.25;.5;1" dur="2.6s" begin="-1.6s" repeatCount="indefinite"/></use></g>
+<g transform="translate(30 270)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;0;.9;0" keyTimes="0;.4;.65;.9" dur="3s" begin="-.4s" repeatCount="indefinite"/></use></g>
+<g transform="translate(110 296)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;.6;0;0" keyTimes="0;.2;.4;1" dur="2.2s" begin="-1.2s" repeatCount="indefinite"/></use></g>
+<g transform="translate(96 18)"><use href="#sp-star"><animateTransform attributeName="transform" type="scale" values="0;.55;0;0" keyTimes="0;.25;.5;1" dur="2.9s" begin="-2s" repeatCount="indefinite"/></use></g>
+</g>
+<g fill="#fff3c4">
+<circle r="1.4"><animateMotion dur="7s" repeatCount="indefinite" path="M20 330 C 50 240, 0 160, 40 60 S 30 -10, 50 -20"/><animate attributeName="opacity" values="0;1;1;0" dur="7s" repeatCount="indefinite"/></circle>
+<circle r="1"><animateMotion dur="8s" begin="-3s" repeatCount="indefinite" path="M130 330 C 160 240, 100 160, 140 60 S 120 -10, 150 -20"/><animate attributeName="opacity" values="0;1;1;0" dur="8s" begin="-3s" repeatCount="indefinite"/></circle>
+<circle r="1.2"><animateMotion dur="6s" begin="-5s" repeatCount="indefinite" path="M220 330 C 190 240, 240 160, 200 60 S 220 -10, 190 -20"/><animate attributeName="opacity" values="0;1;1;0" dur="6s" begin="-5s" repeatCount="indefinite"/></circle>
+<circle r=".9"><animateMotion dur="9s" begin="-1.4s" repeatCount="indefinite" path="M80 330 C 60 240, 110 160, 70 60 S 90 -10, 60 -20"/><animate attributeName="opacity" values="0;1;1;0" dur="9s" begin="-1.4s" repeatCount="indefinite"/></circle>
+<circle r="1.1"><animateMotion dur="7.5s" begin="-6s" repeatCount="indefinite" path="M180 330 C 210 240, 160 160, 190 60 S 170 -10, 200 -20"/><animate attributeName="opacity" values="0;1;1;0" dur="7.5s" begin="-6s" repeatCount="indefinite"/></circle>
+</g>
+</svg>

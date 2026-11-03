@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="ce-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fdf2f8"/><stop offset=".5" stop-color="#f9a8d4"/><stop offset="1" stop-color="#f472b6"/><animateTransform attributeName="gradientTransform" type="rotate" values="0 .5 .5;360 .5 .5" dur="8s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="ce-e" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b3b44"/><stop offset="1" stop-color="#15151a"/></linearGradient>
+</defs>
+<g><path d="M34 46 L30 6 C 30 2, 34 1, 37 4 L66 28 Z" fill="url(#ce-e)"/><path d="M38 38 L36 16 L56 30 Z" fill="#f9a8d4"/><animateTransform attributeName="transform" type="rotate" values="0 48 34;0 48 34;-12 48 34;5 48 34;0 48 34" keyTimes="0;.82;.88;.94;1" dur="5s" repeatCount="indefinite"/></g>
+<g><path d="M126 46 L130 6 C 130 2, 126 1, 123 4 L94 28 Z" fill="url(#ce-e)"/><path d="M122 38 L124 16 L104 30 Z" fill="#f9a8d4"/><animateTransform attributeName="transform" type="rotate" values="0 112 34;0 112 34;12 112 34;-5 112 34;0 112 34" keyTimes="0;.82;.88;.94;1" dur="5s" begin="-2.4s" repeatCount="indefinite"/></g>
+<circle cx="80" cy="80" r="55.5" fill="none" stroke="url(#ce-g)" stroke-width="5.5"/>
+<circle cx="80" cy="80" r="55.5" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-dasharray="30 319" opacity=".9"><animate attributeName="stroke-dashoffset" values="0;-349" dur="4s" repeatCount="indefinite"/></circle>
+<g fill="#ff8fc7"><path d="M132 118 c -2 -3, -6 -1, -4 2 l 4 4 l 4 -4 c 2 -3, -2 -5, -4 -2 Z"><animateTransform attributeName="transform" type="translate" values="0 0;2 -12;4 -24" dur="3.4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0;1;0" dur="3.4s" repeatCount="indefinite"/></path></g>
+</svg>

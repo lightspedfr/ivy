@@ -1,0 +1,7 @@
+{
+  "apiBase": "https://ivy.rest",
+  "gamesIframe": "https://games.ivy.rest/static/games/index.html",
+  "games": "hosted on ivy; no local game catalogue, thumbnails or HTML payloads",
+  "proxyEngines": "bundled locally",
+  "hosting": "static HTTPS, automatic base paths, hash navigation"
+}

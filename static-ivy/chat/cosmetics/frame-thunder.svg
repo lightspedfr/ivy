@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 160 160" width="160" height="160">
+<defs>
+<linearGradient id="th-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a8a"/><stop offset=".5" stop-color="#312e81"/><stop offset="1" stop-color="#0f172a"/></linearGradient>
+<filter id="th-arc" x="-30%" y="-30%" width="160%" height="160%"><feTurbulence type="turbulence" baseFrequency="0.09" numOctaves="1" seed="2" result="n"><animate attributeName="seed" values="2;5;9;14;20" calcMode="discrete" dur=".5s" repeatCount="indefinite"/></feTurbulence><feDisplacementMap in="SourceGraphic" in2="n" scale="6" xChannelSelector="R" yChannelSelector="G" result="d"/><feGaussianBlur in="d" stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="d"/></feMerge></filter>
+<filter id="th-glow" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<circle cx="80" cy="80" r="56" fill="none" stroke="url(#th-g)" stroke-width="8"/>
+<circle cx="80" cy="80" r="56" fill="none" stroke="#fde047" stroke-width="1.8" filter="url(#th-arc)"/>
+<g filter="url(#th-glow)" fill="#fffbe6" stroke="#fde047" stroke-width="1" stroke-linejoin="round">
+<path d="M122 8 L108 34 L118 34 L104 58 L128 28 L118 28 L130 8 Z"><animate attributeName="opacity" values="0;0;1;.2;1;0;0" keyTimes="0;.6;.64;.68;.72;.8;1" dur="2.6s" repeatCount="indefinite"/></path>
+<path d="M34 112 L22 132 L30 132 L18 154 L40 126 L32 126 L42 112 Z"><animate attributeName="opacity" values="0;0;1;.2;1;0;0" keyTimes="0;.2;.24;.28;.32;.4;1" dur="2.6s" repeatCount="indefinite"/></path>
+</g>
+<circle cx="80" cy="80" r="66" fill="none" stroke="#fde047" stroke-width="1" opacity="0"><animate attributeName="opacity" values="0;0;.7;0;0" keyTimes="0;.6;.64;.75;1" dur="2.6s" repeatCount="indefinite"/></circle>
+</svg>

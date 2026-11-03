@@ -1,0 +1,1 @@
+(()=>{const e="undefined"==typeof document?self.location.href:document.currentScript.src,t=new URL("./",e).pathname;self.IvyStatic=Object.freeze({base:t,apiBase:"https://ivy.rest",asset(e=""){const s=String(e);return s.startsWith(t)&&"/"!==t?s:t+s.replace(/^\/+/,"")}})})();
