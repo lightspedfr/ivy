@@ -1,0 +1,29 @@
+name: Decompress tar.gz and Commit
+
+on:
+  workflow_dispatch: # Or change to push, schedule, etc.
+
+jobs:
+  decompress-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Decompress tar.gz file
+        run: |
+          # Replace 'archive.tar.gz' with the actual path to your .tar.gz file
+          # Replace '-C destination_folder' if you need to extract to a specific folder
+          tar -xzf static-ivy-updated.tar.gz -C .
+
+      - name: Configure Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          git status
+          git diff --staged --quiet || git commit -m "Decompress tar.gz and update repository contents"
+          git push
