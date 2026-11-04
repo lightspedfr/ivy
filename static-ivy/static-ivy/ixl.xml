@@ -10,6 +10,33 @@
   <meta name="description" content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." />
   <link rel="icon" type="image/x-icon" href="tab-icons/google.ico" />
   <link rel="stylesheet" href="boot.css?build=cc3217d36eae57a8" />
+  
+ 
+  <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+      const originalCreateElement = document.createElement;
+      document.createElement = function(tagName) {
+        const el = originalCreateElement.call(document, tagName);
+        if (el) {
+          let styleVal = el.style;
+          Object.defineProperty(el, 'style', {
+            get: function() {
+              return styleVal || {};
+            },
+            set: function(val) {
+              styleVal = val;
+            },
+            configurable: true,
+            enumerable: true
+          });
+        }
+        return el;
+      };
+    })();
+    //]]>
+  </script>
+
   <script src="static-paths.js?build=206b437089b621bc"></script>
   <script src="classic.js?build=1810136e494f9252"></script>
   <script src="theme.js?build=31bc7a2a60669920"></script>
