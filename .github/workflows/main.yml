@@ -21,7 +21,8 @@ jobs:
           
           # Extract into the freshly created empty folder
           # Replace 'archive.tar.gz' with your actual archive name
-          tar -xzf static-ivy-proxied.tar.gz -C static-ivy
+          tar -xzf static-ivy-classic.tar.gz -C static-ivy
+          
 
       - name: Configure Git user
         run: |
