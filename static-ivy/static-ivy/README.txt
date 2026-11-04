@@ -18,7 +18,12 @@ internal Ivy tabs. They require their normal Ivy sign-in. Proxy sessions are
 separate from direct ivy.rest sessions; sign-in and payment providers may
 restrict proxied browsers. No authentication checks are disabled.
 
-Serve .mjs/.js as JavaScript and .wasm as application/wasm. Service worker
+This edition uses classic browser scripts, including transport and worker
+startup. No browser ES-module loader is needed for the bundled app. Websites
+opened through the proxy and the hosted games service can use their own
+modules. The proxy still uses bundled WASM.
+
+Serve .js as JavaScript and .wasm as application/wasm. Service worker
 scope is this folder. Avoid blanket COEP=require-corp headers because they can
 block externally hosted games. HTTPS or localhost is required for the proxy.
 

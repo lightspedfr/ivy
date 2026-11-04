@@ -1,22 +1,26 @@
 {
+  "scriptFormat": "classic browser scripts, classic service worker and importScripts transport startup",
+  "checks": [
+    "all 23 JavaScript files parsed without ES imports or exports",
+    "no module script tags, module preload or .mjs payloads",
+    "local HTML asset references checked",
+    "renamed runtime identifiers checked; bundled WASM validated",
+    "all four transport factories loaded with hostile external AMD/CommonJS globals",
+    "shared-worker transport factory uses importScripts",
+    "real central API request through bundled Wisp transport",
+    "compiled runners: both engines, isolated and non-isolated contexts, nested base path and worker scope",
+    "central navigation, tab reuse and deep links",
+    "central sign-in response policy preservation"
+  ],
   "centralFeatures": {
     "account": "https://ivy.rest/l",
     "communityChat": "https://ivy.rest/c",
     "billing": "https://ivy.rest/bi",
     "links": "https://ivy.rest/lk"
   },
-  "navigation": "internal proxy tabs; direct Ivy links and local central-feature links are intercepted; no external browser-tab navigation",
-  "checks": [
-    "navigation state and tab reuse",
-    "deep links and nested base path",
-    "secure destination validation",
-    "both engine initializations and scope",
-    "central sign-in response policies",
-    "API cancellation and retries",
-    "four central pages fetched through bundled transport",
-    "generated-module linking and runtime identifier audit"
-  ],
-  "authentication": "normal server authentication and origin protections remain; signed-in browser flows are not interactively verified",
-  "games": "hosted iframe on games.ivy.rest",
-  "payload": "compiled frontend assets and license metadata only; no keys, server source, account data or deployment configuration"
+  "navigation": "internal Ivy proxy tabs",
+  "games": "isolated hosted iframe at https://games.ivy.rest/static/games/index.html",
+  "scope": "bundled static application; proxied websites and hosted games can use their own modules",
+  "limits": "browser UI, signed-in OAuth and payment flows have not been interactively verified",
+  "payload": "compiled frontend assets, public configuration and license metadata only"
 }
